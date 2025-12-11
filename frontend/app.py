@@ -1,12 +1,10 @@
 import streamlit as st
 import requests
 
-API_CHAT = "http://localhost:8000/chat"
-API_CALC = "http://localhost:8000/calculate"
+API_CHAT = "https://coined-one-task.onrender.com/chat"
+API_CALC = "https://coined-one-task.onrender.com/calculate"
 
-# -------------------------------
-# PAGE CONFIG
-# -------------------------------
+
 st.set_page_config(page_title="AI Mortgage Assistant", page_icon="🏠", layout="wide")
 
 st.title("🏠 AI Mortgage Smart Advisor (UAE)")
@@ -16,9 +14,7 @@ st.markdown(
     """
 )
 
-# -------------------------------
-# CHAT AREA
-# -------------------------------
+
 st.subheader("💬 Chat with Mortgage Assistant")
 
 chat_container = st.container()
@@ -48,9 +44,7 @@ if user_input:
     st.session_state.messages.append({"role": "assistant", "content": reply})
     st.chat_message("assistant").write(reply)
 
-# -------------------------------
-# BUY VS RENT CALCULATOR
-# -------------------------------
+
 st.divider()
 st.subheader("📊 Quick Buy vs Rent Calculator")
 
