@@ -1,0 +1,39 @@
+GENERAL UAE MORTGAGE RULES
+
+1. Loan-to-Value (LTV) for Expat Buyers:
+   - Minimum down payment required is 20% of the property price.
+   - Banks typically finance a maximum of 80% of the property value.
+
+2. Mortgage Tenure:
+   - Maximum mortgage tenure allowed for expats is 25 years.
+   - Shorter tenures result in higher EMI but lower total interest.
+
+3. Interest Rates:
+   - Typical mortgage interest rate in UAE for expats is between 3.5% and 5.0%.
+   - For calculators, assume a standard rate of 4.5% unless otherwise specified.
+
+4. Upfront Costs (~7% of property price):
+   - Dubai Land Department (DLD) Fees: 4% of property value.
+   - Registration Trustee Fee: ~AED 4,000.
+   - Mortgage Registration Fee: ~0.25% of loan amount.
+   - Bank processing fees: ~1% of loan amount.
+   - Estimated total upfront cost ≈ 7% of property price.
+
+5. Income-to-EMI Affordability (DTI rule):
+   - Banks prefer that EMI should not exceed 50% of the borrower’s monthly income.
+   - EMI-to-income ratio > 0.5 is high risk.
+   - EMI-to-income ratio between 0.3–0.5 is borderline.
+   - EMI-to-income ratio < 0.3 is considered comfortable.
+
+6. Early Settlement:
+   - Many UAE banks charge up to 1% of outstanding loan amount as early repayment fee.
+
+7. Mortgage Types:
+   - Fixed-rate mortgages: EMI remains constant for the fixed period.
+   - Variable-rate mortgages: EMI may change depending on EIBOR rates.
+
+DEFINITIONS:
+- EMI: Equal Monthly Installment paid to the bank.
+- LTV: Percentage of property price financed by the bank.
+- Down Payment: Amount buyer pays upfront.
+- Tenure: Duration of the home loan in years.

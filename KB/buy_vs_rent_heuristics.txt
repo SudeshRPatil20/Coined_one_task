@@ -1,0 +1,35 @@
+BUY VS RENT DECISION RULES
+
+1. Rule Based on Years of Stay:
+   - If buyer plans to stay less than 3 years → Renting is better.
+   - If buyer plans to stay more than 5 years → Buying is better.
+   - Between 3–5 years → Decision depends on income, EMI stress, rent cost, and liquidity.
+
+2. Monthly Rent vs EMI Comparison:
+   - If EMI is significantly higher than rent, buying becomes harder unless long stay is planned.
+   - If EMI ≈ rent, buying is often better for long-term wealth.
+
+3. Upfront Cost Consideration:
+   - Buying requires large upfront costs (≈ 7% of property price).
+   - If the buyer cannot comfortably pay upfront costs → Renting is safer.
+
+4. Liquidity Check:
+   - Buyer should have emergency savings after paying the down payment.
+   - If down payment drains all savings → Renting is safer.
+
+5. EMI-to-Income Ratio:
+   - <30% → Comfortable to buy.
+   - 30–50% → Borderline; depends on stability of income.
+   - >50% → Not advisable to buy; EMI stress is high.
+
+6. Market Stability:
+   - Rising rent + stable property prices → Buying is better.
+   - Falling property prices + high interest → Renting may be safer.
+
+7. Lifestyle Flexibility:
+   - Buying locks the buyer into the property.
+   - Renting gives flexibility to move or upgrade homes.
+
+SUMMARY HEURISTIC:
+- Short stay + high EMI stress + low liquidity → Rent.
+- Long stay + comfortable EMI + enough savings → Buy.

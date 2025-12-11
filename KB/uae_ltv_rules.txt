@@ -1,0 +1,33 @@
+UAE LTV (LOAN-TO-VALUE) RULES
+
+1. Expatriates buying their first residential property:
+   - Maximum LTV is 80% for properties valued up to AED 5 million.
+   - This means minimum down payment required is 20%.
+
+2. Expatriates buying second property:
+   - Maximum LTV is 65%.
+   - Minimum down payment required is 35%.
+
+3. UAE Nationals:
+   - Maximum LTV is 85% for properties under AED 5 million.
+   - Minimum down payment required is 15%.
+
+4. Off-Plan Property:
+   - LTV is generally lower (50–60%).
+   - Down payment requirements are higher (40–50%).
+
+5. Mortgage Eligibility Requirements:
+   - Minimum salary typically AED 8,000–10,000 per month.
+   - Proof of employment or business ownership.
+   - Clean credit history (AECB report).
+
+6. Age Restrictions:
+   - Borrower must usually not exceed age 65 (salaried) or 70 (self-employed) at maturity.
+
+7. Non-Eligible Individuals:
+   - Individuals with poor AECB credit score may be rejected.
+   - Individuals with unstable income may be rejected.
+
+CALCULATION RULE:
+LTV = (Loan Amount / Property Price) * 100
+Loan Amount = Property Price – Down Payment
