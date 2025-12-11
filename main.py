@@ -4,15 +4,12 @@ from pydantic import BaseModel
 from typing import List, Optional
 import os
 
-# LangChain Imports (No agent modules needed)
+
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 
 from dotenv import load_dotenv
 load_dotenv()
-# ============================
-# FASTAPI SETUP
-# ============================
 
 app = FastAPI()
 
@@ -22,11 +19,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
-# ============================
-# DATA MODELS
-# ============================
 
 class ChatMessage(BaseModel):
     role: str
@@ -44,9 +36,6 @@ class MortgageInputs(BaseModel):
     monthly_income: Optional[float] = None
 
 
-# ============================
-# MORTGAGE MATH TOOLS
-# ============================
 
 def calculate_emi(principal: float, annual_rate: float, years: int) -> float:
     r = annual_rate / 12 / 100
@@ -60,7 +49,6 @@ def calculate_emi(principal: float, annual_rate: float, years: int) -> float:
 def compute_buy_vs_rent(data: MortgageInputs):
     result = {}
 
-    # Minimum 20% down payment rule
     min_dp = 0.20 * data.property_price
     result["min_down_payment_required"] = min_dp
     result["is_down_payment_sufficient"] = data.down_payment >= min_dp
@@ -68,22 +56,17 @@ def compute_buy_vs_rent(data: MortgageInputs):
     loan_amount = data.property_price - data.down_payment
     result["loan_amount"] = loan_amount
 
-    # EMI calculation with fixed 4.5% interest
     emi = calculate_emi(loan_amount, 4.5, data.tenure_years)
     result["emi"] = emi
 
-    # Upfront costs (approx. 7% of property price)
     result["upfront_costs"] = 0.07 * data.property_price
 
-    # Rent comparison
     if data.monthly_rent:
         result["total_rent_over_period"] = data.monthly_rent * 12 * data.years_planned
 
-    # EMI-to-income affordability
     if data.monthly_income:
         result["emi_to_income_ratio"] = round(emi / data.monthly_income, 2)
 
-    # Buy vs rent recommendation
     if data.years_planned < 3:
         result["recommendation"] = "rent"
     elif data.years_planned > 5:
@@ -94,9 +77,6 @@ def compute_buy_vs_rent(data: MortgageInputs):
     return result
 
 
-# ============================
-# LLM (Gemini)
-# ============================
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-flash-latest",
@@ -106,9 +86,7 @@ llm = ChatGoogleGenerativeAI(
 )
 
 
-# ============================
-# LOAD KNOWLEDGE BASE (RAG)
-# ============================
+
 
 def load_kb_text():
     kb_files = [
@@ -141,9 +119,6 @@ def retrieve_relevant_facts(query):
     return "\n".join(matched) if matched else text
 
 
-# ============================
-# PROMPT
-# ============================
 
 SYSTEM_PROMPT = """
 You are a UAE mortgage advisor.
@@ -168,9 +143,6 @@ Final Answer:
 prompt = PromptTemplate.from_template(SYSTEM_PROMPT)
 
 
-# ============================
-# LLM CALL
-# ============================
 
 def call_llm(messages):
     user_query = messages[-1]["content"]
@@ -185,9 +157,6 @@ def call_llm(messages):
     return response.content
 
 
-# ============================
-# ROUTES
-# ============================
 
 @app.post("/chat")
 def chat_api(request: ChatRequest):
