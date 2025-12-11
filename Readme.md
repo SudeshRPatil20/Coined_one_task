@@ -1,4 +1,5 @@
-# 📘 AI Mortgage Advisor — RAG + FastAPI + Gemini + Streamlit
+# 📘 The Challenge: Kill the Mortgage Calculator.
+The UAE mortgage market is stuck in 1999—static forms and cold calculators. We want you to build the alternative: An AI-native, conversational interface that guides a user to a decision, not just a number.
 
 ![Banner](images/banner.png)
 
